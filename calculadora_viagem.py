@@ -8,10 +8,13 @@ def titulo():
 def calculo_e_resultados():
     try:
         orcamento_disponivel_reais = float(input("Qual o seu orçamento disponível em reais? "))
-        destino = input("Qual o seu destino? ")
         custo_da_passagem_reais = float(input("Qual o custo da passagem em reais? "))
         custo_diario_hospedagem_euros = float(input("Qual o custo diário da hospedagem em euros? "))
         qtde_de_dias = int(input("Quantos dias de viagem? "))
+        destino = input("Qual o seu destino? ").strip()
+        if not destino or not all(c.isalpha() or c == " " for c in destino):
+            print("Erro: o destino deve conter apenas letras e espaços.")
+            sys.exit()
 
         if (
             orcamento_disponivel_reais < 0
@@ -59,19 +62,4 @@ def calculo_e_resultados():
         sys.exit()
 
 titulo()
-
-while True:
-    print(f"Escolha uma das opções abaixo:")
-    print(f"Selecione [ 1 ] para calcular um novo orçamento de viagem")
-    print(f"Selecione [ 2 ] para finalizar o programa")
-    
-    opcao = int(input("Digite sua opção: "))
-
-    if opcao == 1:
-        calculo_e_resultados()
-    elif opcao == 2:
-        print("Sistema finalizado. Boa viagem!")
-        sys.exit()
-    else:
-        print("Opção inválida!")
-        sys.exit()
+calculo_e_resultados()

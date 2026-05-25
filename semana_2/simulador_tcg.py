@@ -17,7 +17,6 @@ def exibir_placar(nome1, hp1, nome2, hp2):
     print(f"{nome2}: {hp2} HP")
     print("==================")
 
-
 # Entradas
 nome_monstro1 = input("Nome do Monstro 1: ").strip()
 nome_monstro2 = input("Nome do Monstro 2: ").strip()

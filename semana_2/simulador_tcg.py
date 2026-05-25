@@ -1,3 +1,5 @@
+# Exercício pra ficar bizurado no git pull e git push
+
 import sys
 
 def atacar(nome_atacante, ataque, nome_defensor, hp_defensor):

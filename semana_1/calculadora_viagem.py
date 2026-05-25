@@ -1,5 +1,4 @@
 import sys
-
 def titulo():
     print("="*50)
     print("      CALCULADORA DE ORÇAMENTO DE VIAGENS      ")
@@ -60,6 +59,5 @@ def calculo_e_resultados():
     except ValueError:
         print("Erro: Por favor, insira um valor válido.")
         sys.exit()
-
 titulo()
 calculo_e_resultados()

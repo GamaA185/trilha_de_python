@@ -5,7 +5,6 @@ def atacar(nome_atacante, ataque, nome_defensor, hp_defensor):
 
     if hp_defensor < 0:
         hp_defensor = 0
-
     print(f"{nome_atacante} atacou {nome_defensor} causando {ataque} de dano!")
     print(f"{nome_defensor} agora possui {hp_defensor} HP.")
 

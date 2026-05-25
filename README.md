@@ -13,6 +13,8 @@ Repositório desenvolvido para estudos e prática de programação em Python, ab
 - Manipulação de arquivos
 - Git e GitHub
 
+#### --------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Semana 1:
 Foi-se criada uma calculadora com uso voltado p/ nômades digitais (ou outras pessoas) que precisam de auxílio para organizar algumas de suas despesas.
 

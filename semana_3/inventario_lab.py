@@ -1,4 +1,5 @@
 import sys
+# Esqueci da prr da base de dados :)
 
 reagentes_unicos = set(reagentes)
 

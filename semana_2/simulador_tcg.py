@@ -1,3 +1,5 @@
+# Exercício pra ficar bizurado no git pull e git push
+
 import sys
 
 def atacar(nome_atacante, ataque, nome_defensor, hp_defensor):
@@ -5,19 +7,16 @@ def atacar(nome_atacante, ataque, nome_defensor, hp_defensor):
 
     if hp_defensor < 0:
         hp_defensor = 0
-
     print(f"{nome_atacante} atacou {nome_defensor} causando {ataque} de dano!")
     print(f"{nome_defensor} agora possui {hp_defensor} HP.")
 
     return hp_defensor
-
 
 def exibir_placar(nome1, hp1, nome2, hp2):
     print("\n===== PLACAR =====")
     print(f"{nome1}: {hp1} HP")
     print(f"{nome2}: {hp2} HP")
     print("==================")
-
 
 # Entradas
 nome_monstro1 = input("Nome do Monstro 1: ").strip()
@@ -48,7 +47,6 @@ if (
 ):
     print("Erro: HP e ataque devem ser maiores que zero!")
     sys.exit()
-
 
 turno = 1
 
@@ -81,7 +79,6 @@ while hp_monstro1 > 0 and hp_monstro2 > 0:
     )
 
     turno += 1
-
 
 print("\n===== FIM DA BATALHA =====")
 

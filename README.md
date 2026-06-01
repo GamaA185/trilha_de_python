@@ -13,7 +13,6 @@ Repositório desenvolvido para estudos e prática de programação em Python, ab
 - Manipulação de arquivos
 - Git e GitHub
 
-#### --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Semana 1:
 Foi-se criada uma calculadora com uso voltado p/ nômades digitais (ou outras pessoas) que precisam de auxílio para organizar algumas de suas despesas.
@@ -34,7 +33,6 @@ O Python gera um erro do tipo TypeError. Ele não permite operações entre tipo
 
 ## Semana 1 concluída 😉
 
-#### --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Semana 2
 Foi-se criado um protótipo p/ um tipo de Jogo de Carta Colecionável (Trading Card Game) que simula um duelo entre dois montros.
@@ -52,3 +50,20 @@ Serve p/ devolver um valor produzido pela função. Sem o return, a função pod
 Um loop infinito acontece quando a condição de parada de um while nunca é satisfeita, e pode-se evitar isso garantindo que alguma variável seja alterada dentro do laço, permitindo que a condição eventualmente se torne falsa.
 
 ## Semana 2 concluída 😉
+
+
+### Semana 3
+Foi-se criado um programa que visa processar informações como nome de reagente, pureza de cada frasco e código do lote, identificar os tipos únicos de reagentes disponíveis e automatizar a seleção de frascos adequados para experimentos que exigem elevada pureza.
+
+## Perguntas teóricas da semana 3
+
+## Levando em consideração a estrutura do nosso inventário, por que seria incorreto usar a função dict() para transformar o resultado do nosso zip() em um dicionário, utilizando o nome do reagente como "Chave" e o lote como "Valor"?
+Seria incorreto utilizar dict() porque existem reagentes repetidos associados a diferentes lotes. Como as chaves do dicionário devem ser únicas, dados seriam perdidos.
+
+## O que a função zip() gera na memória do Python antes de usarmos a função list() para forçar a visualização dos dados?
+A função zip() gera um objeto iterador do tipo zip object. Os dados só são materializados quando utilizamos list().
+
+## Observando o seu código final, de que forma o List Comprehension substitui a necessidade de criar uma lista vazia e usar a estrutura de repetição for tradicional acompanhada do método .append()?
+O List Comprehension substitui a criação de umalista vazia e o uso de append(), realizando afiltragem e construção da lista em uma única expressão.
+
+## Semana 3 concluída 😉

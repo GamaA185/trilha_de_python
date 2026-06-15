@@ -67,3 +67,17 @@ A função zip() gera um objeto iterador do tipo zip object. Os dados só são m
 O List Comprehension substitui a criação de umalista vazia e o uso de append(), realizando afiltragem e construção da lista em uma única expressão.
 
 ## Semana 3 concluída 😉
+
+### Semana 4
+
+## Foi-se criado um programa capaz de automatizar o versionamento de diretórios vazios em um repositório Git. O algoritmo percorre os diretórios do projeto, cria automaticamente arquivos .gitkeep em diretórios vazios, remove esses arquivos quando o diretório deixa de ser vazio e registra todas as alterações em um arquivo log.json, ignorando completamente o diretório logs.
+
+## Perguntas teóricas da Semana 4
+
+## Qual a diferença entre json.dump() e json.dumps()?
+A função json.dump() grava um objeto Python diretamente em um arquivo no formato JSON. Já a função json.dumps() converte um objeto Python em uma string no formato JSON, permitindo que ela seja armazenada ou manipulada antes de ser salva.
+
+## Qual a diferença entre json.load() e json.loads()?
+A função json.load() lê um arquivo JSON e converte seu conteúdo para um objeto Python. Já a função json.loads() recebe uma string contendo um JSON e a transforma em um objeto Python correspondente.
+
+Semana 4 concluída 😉

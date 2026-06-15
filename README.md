@@ -70,7 +70,7 @@ O List Comprehension substitui a criação de umalista vazia e o uso de append()
 
 
 ### Semana 4
-Foi-se criado um programa capaz de automatizar o versionamento de diretórios vazios em um repositório Git. O algoritmo percorre os diretórios do projeto, cria automaticamente arquivos .gitkeep em diretórios vazios, remove esses arquivos quando o diretório deixa de ser vazio e registra todas as alterações em um arquivo log.json, ignorando completamente o diretório logs.
+Programa capaz de automatizar o versionamento de diretórios vazios em um repositório Git. O algoritmo percorre os diretórios do projeto, cria automaticamente arquivos .gitkeep em diretórios vazios, remove esses arquivos quando o diretório deixa de ser vazio e registra todas as alterações em um arquivo log.json, ignorando completamente o diretório logs. (deve ter erros)
 
 ## Perguntas teóricas da Semana 4
 

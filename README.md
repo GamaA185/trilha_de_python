@@ -79,3 +79,16 @@ A função json.dump() grava um objeto Python diretamente em um arquivo no forma
 
 ## Qual a diferença entre json.load() e json.loads()?
 A função json.load() lê um arquivo JSON e converte seu conteúdo para um objeto Python. Já a função json.loads() recebe uma string contendo um JSON e a transforma em um objeto Python correspondente.
+
+### Outras semanas
+
+## Projeto — Reator Flexível: CSTR / Batch com Cinética de Segunda Ordem
+
+Como projeto próprio, foi-se desenvolvido um simulador de reator líquido ideal com possibilidade de operação em Batch ou CSTR, aplicado à rede de reações:
+
+**A + B ⇌ C → I → P**
+
+O modelo considera uma primeira etapa elementar e reversível, de segunda ordem na direção direta, seguida por etapas elementares irreversíveis de primeira ordem. O programa também incorpora a dependência das constantes cinéticas com a temperatura por meio da equação de Arrhenius e um balanço de energia considerando o calor das reações e a troca térmica com uma camisa.
+
+O código foi estruturado utilizando `dataclass` para organização dos parâmetros do reator e bibliotecas científicas do Python, incluindo NumPy, Pandas, Matplotlib e SciPy. A integração numérica do sistema de equações diferenciais ordinárias é realizada com `solve_ivp`, utilizando o método BDF, adequado para sistemas que podem apresentar comportamento rígido (stiff).
+O projeto permite analisar a evolução temporal das concentrações de A, B, C, I e P, além da temperatura do sistema. Ao final da simulação, são calculados parâmetros como conversão aparente de A, temperatura máxima, maior acúmulo do intermediário I e as constantes cinéticas na temperatura final.

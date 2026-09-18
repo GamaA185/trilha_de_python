@@ -92,3 +92,49 @@ O modelo considera uma primeira etapa elementar e reversível, de segunda ordem 
 
 O código foi estruturado utilizando `dataclass` para organização dos parâmetros do reator e bibliotecas científicas do Python, incluindo NumPy, Pandas, Matplotlib e SciPy. A integração numérica do sistema de equações diferenciais ordinárias é realizada com `solve_ivp`, utilizando o método BDF, adequado para sistemas que podem apresentar comportamento rígido (stiff).
 O projeto permite analisar a evolução temporal das concentrações de A, B, C, I e P, além da temperatura do sistema. Ao final da simulação, são calculados parâmetros como conversão aparente de A, temperatura máxima, maior acúmulo do intermediário I e as constantes cinéticas na temperatura final.
+
+## Teste simples - Reator Batelada Ideal (Isotérmico)
+
+Este projeto apresenta um teste básico de simulação cinética utilizando a biblioteca Overreact em Python. O objetivo é verificar a implementação de uma reação simples e visualizar a evolução temporal das concentrações das espécies.
+
+O sistema considerado é:
+
+**Ciclopropano → Propeno**
+
+A reação é modelada como uma etapa irreversível de primeira ordem. O mecanismo é definido diretamente no Overreact por meio de parse_reactions.
+
+**Parâmetros**
+
+A constante cinética utilizada no teste é:
+
+k = 1,5 × 10⁻⁴ s⁻¹
+
+correspondente a T = 763 K no exemplo. A condição inicial considera concentração unitária de ciclopropano e concentração inicial nula de propeno:
+
+Ciclopropano: 1 mol L⁻¹
+Propeno: 0 mol L⁻¹
+
+A simulação é realizada entre 0 e 5 × 10⁴ s.
+
+**Método numérico**
+
+A integração das equações diferenciais é realizada utilizando o método Radau, com:
+
+atol = 1 × 10⁻¹⁰
+rtol = 1 × 10⁻⁸
+
+O uso de um solver adequado para sistemas de equações diferenciais permite acompanhar a variação das concentrações ao longo do tempo.
+
+**Visualização**
+
+Ao final da simulação, o código gera um gráfico das concentrações de ciclopropano e propeno em função do tempo.
+
+O resultado esperado é a diminuição progressiva da concentração de ciclopropano acompanhada pelo aumento da concentração de propeno.
+
+**Objetivo do projeto**
+
+Este código funciona como um teste introdutório do Overreact, servindo para verificar o fluxo básico:
+
+definição da reação → constante cinética → geração das equações diferenciais → integração numérica → visualização dos resultados.
+
+Ele também serve como uma ponte entre os conceitos de cinética química e a utilização de ferramentas computacionais para Engenharia Química.

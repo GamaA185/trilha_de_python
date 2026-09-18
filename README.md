@@ -80,6 +80,9 @@ A função json.dump() grava um objeto Python diretamente em um arquivo no forma
 ## Qual a diferença entre json.load() e json.loads()?
 A função json.load() lê um arquivo JSON e converte seu conteúdo para um objeto Python. Já a função json.loads() recebe uma string contendo um JSON e a transforma em um objeto Python correspondente.
 
+## Semana 4 concluída 😉
+
+
 ### Outras semanas
 
 ## Projeto — Reator Flexível: CSTR / Batch com Cinética de Segunda Ordem

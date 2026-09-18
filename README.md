@@ -111,8 +111,7 @@ k = 1,5 × 10⁻⁴ s⁻¹
 
 correspondente a T = 763 K no exemplo. A condição inicial considera concentração unitária de ciclopropano e concentração inicial nula de propeno:
 
-Ciclopropano: 1 mol L⁻¹
-Propeno: 0 mol L⁻¹
+Ciclopropano: 1 mol L⁻¹ ; Propeno: 0 mol L⁻¹
 
 A simulação é realizada entre 0 e 5 × 10⁴ s.
 
@@ -120,8 +119,7 @@ A simulação é realizada entre 0 e 5 × 10⁴ s.
 
 A integração das equações diferenciais é realizada utilizando o método Radau, com:
 
-atol = 1 × 10⁻¹⁰
-rtol = 1 × 10⁻⁸
+atol = 1 × 10⁻¹⁰ ; rtol = 1 × 10⁻⁸
 
 O uso de um solver adequado para sistemas de equações diferenciais permite acompanhar a variação das concentrações ao longo do tempo.
 

@@ -17,7 +17,9 @@ fig, ax = plt.subplots()
 ax.plot(t, y(t)[0], label="Ciclopropano")
 ax.plot(t, y(t)[1], label="Propeno")
 ax.legend()
-ax.set_title("Isomerização térmica do Ciclopropano e Propeno")
+ax.set_title("Isomerização térmica entre Ciclopropano e Propeno") # Ocorre em altas temperaturas, como T = 763 K
 ax.set_xlabel("Time (s)")
 ax.set_ylabel("Concentration (M)")
 plt.show()
+
+# That's it folks! :) 
